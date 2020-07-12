@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de Compras</title>
+  </head>
+  <body>
+    <main id="content-section">
+      <h1 id="title">LISTA DE COMPRAS</h1>
+      <div id="list-section">
+        <div id="add-section">
+          <input
+            id="nameInput"
+            type="text"
+            placeholder="Nombre del producto..."
+          />
+          <input id="priceInput" type="number" placeholder="Precio..." />
+          <button onclick="addItem()">+</button>
+        </div>
+        <table>
+          <tr>
+            <td>Leche</td>
+            <td class="price">$20.00</td>
+          </tr>
+          <tr>
+            <td>Huevos</td>
+            <td class="price">$60.00</td>
+          </tr>
+          <tr>
+            <td>Carne</td>
+            <td class="price">$106.50</td>
+          </tr>
+          <tr>
+            <td>Refresco</td>
+            <td class="price">$38.00</td>
+          </tr>
+          <tr>
+            <td>Tortillas</td>
+            <td class="price">$30.50</td>
+          </tr>
+          <tr>
+            <td>Queso</td>
+            <td class="price">$75.00</td>
+          </tr>
+        </table>
+        <div id="total-section">
+          <h2 id="total"></h2>
+          <h2 id="checkedTotal"></h2>
+        </div>
+        <img id="drawing" src="./img/drawing.svg" alt="" />
+      </div>
+    </main>
+    <img id="ellipse1" src="./img/ellipse1.svg" alt="" />
+    <img id="ellipse2" src="./img/ellipse2.svg" alt="" />
+    <img id="ellipse3" src="./img/ellipse3.svg" alt="" />
+    <img id="ellipse4" src="./img/ellipse4.svg" alt="" />
+    <script src="./app.js"></script>
+  </body>
+</html>
